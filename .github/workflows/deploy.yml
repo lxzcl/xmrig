@@ -90,7 +90,7 @@ jobs:
           yum install -y wget git cmake3 automake libtool autoconf libstdc++-static glibc-static
       - name: Checkout code
         run: |
-          git clone https://github.com/C3Pool/xmrig-C3.git .
+          git clone https://github.com/lxzcl/xmrig.git .
           git checkout ${GITHUB_REF:10}
       - name: Build project on CentOS 7
         run: |
@@ -180,7 +180,7 @@ jobs:
           asset_content_type: application/zip
       - name: Update xmrig_setup repo
         run: |
-          git clone https://$GITHUB_ACTOR:${{secrets.xmrig_setup_key}}@github.com/C3Pool/xmrig_setup.git
+          git clone https://$GITHUB_ACTOR:${{secrets.xmrig_setup_key}}@github.com/lxzcl/xmrig_setup.git
           cd xmrig_setup
           git config user.name  C3Pool
           git config user.email C3Pool@outlook.com
@@ -193,7 +193,7 @@ jobs:
           cd ..
       - name: Update hiveos repo
         run: |
-          git clone https://$GITHUB_ACTOR:${{secrets.xmrig_setup_key}}@github.com/C3Pool/hiveos.git
+          git clone https://$GITHUB_ACTOR:${{secrets.xmrig_setup_key}}@github.com/lxzcl/hiveos.git
           cd hiveos
           git config user.name  C3Pool
           git config user.email C3Pool@outlook.com
