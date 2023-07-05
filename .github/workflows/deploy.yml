@@ -206,4 +206,3 @@ jobs:
           git add cat_xmrig-$VER.tar.gz cat_xmrig/xmrig cat_xmrig/config_global.json
           git commit -m "xmrig "${GITHUB_REF:10}" based release" cat_xmrig-$VER.tar.gz
           git push
-          
